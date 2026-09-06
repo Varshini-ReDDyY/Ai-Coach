@@ -2,6 +2,9 @@
 
 An AI-powered interview preparation platform that helps users practice technical and HR interviews with instant AI feedback, detailed evaluation reports, and a dedicated learning mode — now with resume-personalized questions powered by a retrieval-augmented generation (RAG) pipeline.
 
+**🔗 Live demo:** https://ai-interview-coach-psi-one.vercel.app
+_(hosted on Vercel + Render's free tier — the backend spins down when idle, so the first request after a while can take ~30-60s to wake up)_
+
 ---
 
 ## ✨ Features
