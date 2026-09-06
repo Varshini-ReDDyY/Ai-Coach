@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ai-interview-coach-backend
+    runtime: python
+    rootDir: backend-fastapi
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: POSTGRES_URI
+        sync: false

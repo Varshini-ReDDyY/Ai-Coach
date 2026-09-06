@@ -27,6 +27,13 @@ function Navbar() {
         </h1>
 
         <div className="flex items-center gap-4">
+          <button
+            onClick={() => navigate("/analytics")}
+            className="rounded-lg bg-white/15 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/25 active:scale-95"
+          >
+            📊 Analytics
+          </button>
+
           <span className="hidden text-sm text-indigo-100 sm:inline">
             Welcome, <span className="font-semibold text-white">{userName}</span>
           </span>

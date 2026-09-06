@@ -52,3 +52,43 @@ export interface InterviewForm {
   count: number;
   purpose: Purpose;
 }
+
+export interface TopicStat {
+  topic: string;
+  averageScore: number;
+  count: number;
+}
+
+export interface DifficultyStat {
+  difficulty: string;
+  averageScore: number;
+  count: number;
+}
+
+export interface TopicQuestion {
+  question: string;
+  score: number;
+}
+
+export interface TopicQuestions {
+  topic: string;
+  questions: TopicQuestion[];
+}
+
+export interface DailyActivity {
+  date: string;
+  count: number;
+}
+
+export interface AnalyticsOverview {
+  success: boolean;
+  totalInterviews: number;
+  averageScore: number;
+  byTopic: TopicStat[];
+  byDifficulty: DifficultyStat[];
+  questionsByTopic: TopicQuestions[];
+  consistency: {
+    currentStreakDays: number;
+    activeDaysLast30: DailyActivity[];
+  };
+}
